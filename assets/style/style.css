@@ -1,0 +1,140 @@
+/*=============== FONT ===============*/
+    /*Outfit - "Outfit", sans-serif */
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+    /*Young-Serif - "Young Serif", serif */
+    @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+/*=============== BASE CSS ===============*/
+:root {
+    /* Neutral colors */
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-raspberry: hsl(332, 51%, 32%);
+    /* Neutral colors */
+    --White: hsl(0, 0%, 100%);
+    --Rose-white: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-grey: hsl(30, 18%, 87%);
+    --Wenge-brown: hsl(30, 10%, 34%);
+    --Dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: var(--Eggshell);
+}
+
+h1, h2 {
+    font-family: "Young Serif", serif;
+    color: var(--Nutmeg);
+    letter-spacing: 0.05rem;
+}
+
+p, li {
+    line-height: 1.8;
+    color: var(--Wenge-brown);
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-top: 0.5rem;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 1.2rem;
+}
+
+/*=============== RECIPE ===============*/
+    .container {
+        max-width: 900px;
+        margin-inline: auto;
+        padding: 5rem 0 0;
+        background-color: var(--White);
+        border-radius: 2rem;
+    }
+
+    .container div:not(:first-child) {
+        padding: 1.5rem;
+    }
+
+    /*=============== INTRO ===============*/
+    .intro h1 {
+        margin-bottom: 1rem;
+        color: var(--Dark-charcoal);
+    }
+
+    .intro article {
+        background-color: var(--Rose-white);
+        padding: 1.5rem;
+        border-radius: 0.65rem;
+    }
+
+    .intro article h3 {
+        color: var(--Dark-raspberry);
+        margin-bottom: 0.5rem;
+    }
+
+    /*=============== INSTRUCTION ===============*/
+    .instructions {
+        border-top: 1px solid var(--Light-grey);
+        border-bottom: 1px solid var(--Light-grey);
+    }
+
+    /*=============== NUTRITION ===============*/
+    .nutrition p {
+        margin-top: 1rem;
+    }
+
+    .nutrition article ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .nutrition ul li {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px solid var(--Light-grey);
+        padding: 0.5rem 0;
+    }
+
+    .nutrition ul li:last-child {
+        border-bottom: none;
+    }
+
+    .nutrition ul span {
+        font-weight: 600;
+        color: var(--Nutmeg);
+    }
+
+/*=============== MEDIA QUERIES ===============*/
+@media (min-width: 768px) {
+    .container {
+        margin: 5rem auto 0;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+
+    img {
+        border-radius: 1rem;
+    }
+
+    .intro h1 {
+        font-size: 48px;
+    }
+}
+
+/*=============== ATTRIBUTION ===============*/
+.attribution {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
